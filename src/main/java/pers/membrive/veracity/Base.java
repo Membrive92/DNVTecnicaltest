@@ -15,7 +15,7 @@ public class Base {
     public WebDriver setupDriver() throws IOException {
 
         Properties props = new Properties();
-        FileInputStream fis = new FileInputStream("src/main/java/pers/membrive/veracity/data.properties");
+        FileInputStream fis = new FileInputStream("src/main/resources/data.properties");
 
         props.load(fis);
         String browserName = props.getProperty("browser");
