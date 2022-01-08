@@ -13,7 +13,7 @@ public class LandingPage {
     }
 
 
-    By signin = By.xpath("//*[@data-vlink-type=\"external\" and text() =\"Log in\"]");
+    By signIn = By.xpath("//*[@data-vlink-type=\"external\" and text() =\"Log in\"]");
 
     By marketplace = By.xpath("//*[@class=\"vui-header-link text desktop bordered\" and text() =\"Marketplace\"]");
 
@@ -21,10 +21,12 @@ public class LandingPage {
 
     By storyVideo = By.xpath("//a[@data-isvideo= \"true\"]//h3[contains(text(),'Neptune Energy digitalized their simultaneous operations in eight weeks')]");
 
+    By cookiesAcceptBtn = By.id("onetrust-accept-btn-handler");
+
 
     public WebElement getLogin() {
 
-        return driver.findElement(signin);
+        return driver.findElement(signIn);
     }
 
     public WebElement getMarketplace() {
@@ -40,6 +42,10 @@ public class LandingPage {
     public WebElement getStoryVideo() {
 
         return driver.findElement(storyVideo);
+    }
+
+    public WebElement getCookiesAcceptBtn(){
+        return driver.findElement(cookiesAcceptBtn);
     }
 
 
