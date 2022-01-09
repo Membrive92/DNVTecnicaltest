@@ -44,7 +44,7 @@ public class LandingPage {
         return driver.findElement(storyVideo);
     }
 
-    public WebElement getCookiesAcceptBtn(){
+    public WebElement getCookiesAcceptBtn() {
         return driver.findElement(cookiesAcceptBtn);
     }
 
