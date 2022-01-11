@@ -1,10 +1,14 @@
 package pers.membrive.veracity;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -43,6 +47,13 @@ public class Base {
     public void scrollDown(int x, int y) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(" + x + "," + y + ")", "");
+    }
+
+    public void getScreenshotPath(String testCaseName,  WebDriver driver) throws IOException {
+        TakesScreenshot takeScreen =(TakesScreenshot) driver;
+        File source = takeScreen.getScreenshotAs(OutputType.FILE);
+        String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+        FileUtils.copyFile(source,new File(destinationFile));
     }
 
 

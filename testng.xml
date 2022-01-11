@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/membr/IdeaProjects/dnv">
+<suite name="All Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="pers.membrive.veracity.Listeners"/>
+    </listeners>
+
+    <test name="test">
         <classes>
-            <class name="pers.membrive.veracity.Homepage">
+            <class name="pers.membrive.veracity.Login">
                 <methods>
                     <include name="login"/>
+                </methods>
+            </class>
+            <class name="pers.membrive.veracity.ObtainProduct">
+                <methods>
                     <include name="obtainProduct"/>
+                </methods>
+            </class>
+            <class name="pers.membrive.veracity.ValidateMarketplaceSelectors">
+                <methods>
                     <include name="verifyIndustryCheck"/>
                     <include name="verifyCategoryCheck"/>
                     <include name="verifyProductTypeCheck"/>
