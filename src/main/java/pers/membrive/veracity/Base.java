@@ -13,10 +13,10 @@ import java.util.Properties;
 public class Base {
 
     public WebDriver driver;
-
+    public Properties props;
     public WebDriver setupDriver() throws IOException {
 
-        Properties props = new Properties();
+        props = new Properties();
         FileInputStream fis = new FileInputStream("src/main/resources/data.properties");
 
         props.load(fis);

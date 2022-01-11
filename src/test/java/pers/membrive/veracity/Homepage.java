@@ -1,8 +1,12 @@
 package pers.membrive.veracity;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
+
 import pers.membrive.pageObjects.LandingPage;
 import pers.membrive.pageObjects.LoginPage;
 import pers.membrive.pageObjects.MarketplacePage;
@@ -11,34 +15,44 @@ import java.io.IOException;
 
 public class Homepage extends Base {
 
-
-   @Test
-    public void login() throws IOException {
+    String userEmail;
+    String userPass;
+    public static Logger log ;
+    @BeforeTest
+    public void initialize() throws IOException
+    {
         driver = setupDriver();
-        driver.get("https://www.veracity.com");
+        userEmail = props.getProperty("userEmail");
+        userPass = props.getProperty("userPassword");
+        log = LogManager.getLogger(Base.class.getName());
 
+        log.info("Driver is initialized");
+        driver.get(props.getProperty("url"));
+        log.info("Navigated to Home page");
+    }
+
+    @Test
+    public void login() throws IOException
+    {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
-
+        log.info("Navigated to Home page");
         landing.getCookiesAcceptBtn().click();
         landing.getLogin().click();
-        login.signin();
+        login.signin(userEmail,userPass);
     }
 
 
     @Test
-    public void obtainProduct() throws IOException {
-        driver = setupDriver();
-        driver.get("https://www.veracity.com");
-
-
+    public void obtainProduct() throws IOException
+    {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
-        landing.getCookiesAcceptBtn().click();
+       // landing.getCookiesAcceptBtn().click();
         landing.getLogin().click();
-        login.signin();
+        login.signin(userEmail,userPass);;
         landing.getMarketplace().click();
         marketplace.getTestProduct().click();
         Assert.assertEquals(marketplace.getTestProductTitle().getText(), "Energy Transition Outlook 2021 dataset");
@@ -48,59 +62,53 @@ public class Homepage extends Base {
         Assert.assertEquals(marketplace.getDataTitleProductObtained().getText(), "ETO 2021");
 
     }
-            /*
-    @Test
-    public void verifyIndustryCheck() throws IOException {
-        driver = setupDriver();
-        driver.get("https://www.veracity.com");
 
+    @Test
+    public void verifyIndustryCheck() throws IOException
+    {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
 
-        landing.getCookiesAcceptBtn().click();
+      //  landing.getCookiesAcceptBtn().click();
         landing.getLogin().click();
-        login.signin();
+        login.signin(userEmail,userPass);;
         landing.getMarketplace().click();
         marketplace.getOilGasCheck().click();
-        Assert.assertEquals(marketplace.getOilGasLabel().getText(),"Oil and gas");
+        Assert.assertEquals(marketplace.getOilGasLabel().getText(), "Oil and gas");
         marketplace.getClearAllSpan().click();
     }
 
     @Test
-    public void verifyCategoryCheck() throws IOException {
-        driver = setupDriver();
-        driver.get("https://www.veracity.com");
-
+    public void verifyCategoryCheck() throws IOException
+    {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
 
-        landing.getCookiesAcceptBtn().click();
+       // landing.getCookiesAcceptBtn().click();
         landing.getLogin().click();
-        login.signin();
+        login.signin(userEmail,userPass);;
         landing.getMarketplace().click();
         marketplace.getCyberSecurityCheck().click();
-        Assert.assertEquals(marketplace.getCyberSecurityLabel().getText(),"Cyber security");
+        Assert.assertEquals(marketplace.getCyberSecurityLabel().getText(), "Cyber security");
         marketplace.getClearAllSpan().click();
     }
 
 
     @Test
-    public void verifyProductTypeCheck() throws IOException {
-        driver = setupDriver();
-        driver.get("https://www.veracity.com");
-
+    public void verifyProductTypeCheck() throws IOException
+    {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
 
-        landing.getCookiesAcceptBtn().click();
+      //  landing.getCookiesAcceptBtn().click();
         landing.getLogin().click();
-        login.signin();
+        login.signin(userEmail,userPass);;
         landing.getMarketplace().click();
         marketplace.getFreeCheck().click();
         Assert.assertEquals(marketplace.getFreeLabel().getText(), "Free");
@@ -109,39 +117,36 @@ public class Homepage extends Base {
     }
 
     @Test
-    public void verifyProviderSelect() throws IOException {
-        driver = setupDriver();
-        driver.get("https://www.veracity.com");
-
+    public void verifyProviderSelect() throws IOException
+    {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
 
-        landing.getCookiesAcceptBtn().click();
+      //  landing.getCookiesAcceptBtn().click();
         landing.getLogin().click();
-        login.signin();
+        login.signin(userEmail,userPass);;
         landing.getMarketplace().click();
-        scrollDown(0,500);
+        scrollDown(0, 500);
         marketplace.getProviderSelect().click();
         marketplace.getOptionProviderSelect().click();
         Assert.assertEquals(marketplace.getProviderSelect().getText(), "Cisco");
         marketplace.getClearAllSpan().click();
 
     }
-    @Test
-    public void verifyProductTypeCheck() throws IOException {
-        driver = setupDriver();
-        driver.get("https://www.veracity.com");
 
+    @Test
+    public void verifySearcher() throws IOException
+    {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
 
-        landing.getCookiesAcceptBtn().click();
+       // landing.getCookiesAcceptBtn().click();
         landing.getLogin().click();
-        login.signin();
+        login.signin(userEmail,userPass);;
         landing.getMarketplace().click();
 
         marketplace.getSearchInput().click();
@@ -149,7 +154,13 @@ public class Homepage extends Base {
         marketplace.getSearchInputResult().click();
         Assert.assertEquals(marketplace.getTestProductTitle().getText(), "Energy Transition Outlook 2021 dataset");
 
-    } */
+    }
+
+    @AfterTest
+    public void teardown() {
+
+           driver.close();
+    }
 
 
 }

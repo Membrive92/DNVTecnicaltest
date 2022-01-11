@@ -27,18 +27,12 @@ public class LoginPage {
 
 
     //add login method
-    public void signin() throws IOException {
-        Properties props = new Properties();
-        FileInputStream fis = new FileInputStream("src/main/resources/data.properties");
-
-        props.load(fis);
-        String userEmail = props.getProperty("userEmail");
-        String userPassword = props.getProperty("userPassword");
+    public void signin(String user, String password) throws IOException {
 
 
-        getEmailInput().sendKeys(userEmail);
+        getEmailInput().sendKeys(user);
         getContinueButton().click();
-        getPasswordInput().sendKeys(userPassword);
+        getPasswordInput().sendKeys(password);
         getLoginButton().click();
     }
 
