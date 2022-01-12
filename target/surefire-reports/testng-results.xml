@@ -2,108 +2,111 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-12T11:20:43 CET" name="All Test Suite" finished-at="2022-01-12T11:21:54 CET" duration-ms="70610">
+  <suite started-at="2022-01-12T13:12:26 CET" name="All Test Suite" finished-at="2022-01-12T13:13:46 CET" duration-ms="80070">
     <groups>
+      <group name="mitest">
+        <method signature="LoginTest.login()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" name="login" class="pers.membrive.veracity.LoginTest"/>
+      </group> <!-- mitest -->
     </groups>
-    <test started-at="2022-01-12T11:20:43 CET" name="C:/Users/membr/IdeaProjects/dnv" finished-at="2022-01-12T11:21:54 CET" duration-ms="70610">
-      <class name="pers.membrive.veracity.Login">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.Login@1c93084c]" started-at="2022-01-12T11:20:43 CET" name="initialize" finished-at="2022-01-12T11:20:46 CET" duration-ms="2963" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="login()[pri:0, instance:pers.membrive.veracity.Login@1c93084c]" started-at="2022-01-12T11:20:56 CET" name="login" finished-at="2022-01-12T11:20:58 CET" duration-ms="1868" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.Login@1c93084c]" started-at="2022-01-12T11:21:49 CET" name="teardown" finished-at="2022-01-12T11:21:49 CET" duration-ms="55" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- pers.membrive.veracity.Login -->
+    <test started-at="2022-01-12T13:12:26 CET" name="suite" finished-at="2022-01-12T13:13:46 CET" duration-ms="80070">
       <class name="pers.membrive.veracity.VerifyCategoryCheck">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyCategoryCheck@1d119efb]" started-at="2022-01-12T11:20:48 CET" name="initialize" finished-at="2022-01-12T11:20:49 CET" duration-ms="1571" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyCategoryCheck@28eaa59a]" started-at="2022-01-12T13:12:31 CET" name="initialize" finished-at="2022-01-12T13:12:33 CET" duration-ms="1661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyCategoryCheck()[pri:0, instance:pers.membrive.veracity.VerifyCategoryCheck@1d119efb]" started-at="2022-01-12T11:21:12 CET" name="verifyCategoryCheck" finished-at="2022-01-12T11:21:19 CET" duration-ms="6844" status="PASS">
+        <test-method signature="verifyCategoryCheck()[pri:3, instance:pers.membrive.veracity.VerifyCategoryCheck@28eaa59a]" started-at="2022-01-12T13:13:09 CET" name="verifyCategoryCheck" finished-at="2022-01-12T13:13:16 CET" duration-ms="7349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCategoryCheck -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyCategoryCheck@1d119efb]" started-at="2022-01-12T11:21:53 CET" name="teardown" finished-at="2022-01-12T11:21:53 CET" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyCategoryCheck@28eaa59a]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pers.membrive.veracity.VerifyCategoryCheck -->
-      <class name="pers.membrive.veracity.VerifyIndustryCheck">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@659a969b]" started-at="2022-01-12T11:20:49 CET" name="initialize" finished-at="2022-01-12T11:20:51 CET" duration-ms="1640" status="PASS">
+      <class name="pers.membrive.veracity.LoginTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" started-at="2022-01-12T13:12:26 CET" name="initialize" finished-at="2022-01-12T13:12:29 CET" duration-ms="3073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyIndustryCheck()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@659a969b]" started-at="2022-01-12T11:21:19 CET" name="verifyIndustryCheck" finished-at="2022-01-12T11:21:27 CET" duration-ms="7707" status="PASS">
+        <test-method signature="login()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" started-at="2022-01-12T13:12:40 CET" name="login" finished-at="2022-01-12T13:12:42 CET" duration-ms="2192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- pers.membrive.veracity.LoginTest -->
+      <class name="pers.membrive.veracity.VerifyIndustryCheck">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@3427b02d]" started-at="2022-01-12T13:12:33 CET" name="initialize" finished-at="2022-01-12T13:12:35 CET" duration-ms="1820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyIndustryCheck()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@3427b02d]" started-at="2022-01-12T13:13:16 CET" name="verifyIndustryCheck" finished-at="2022-01-12T13:13:24 CET" duration-ms="7051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIndustryCheck -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@659a969b]" started-at="2022-01-12T11:21:53 CET" name="teardown" finished-at="2022-01-12T11:21:53 CET" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@3427b02d]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pers.membrive.veracity.VerifyIndustryCheck -->
-      <class name="pers.membrive.veracity.ObtainProduct">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.ObtainProduct@6fe7aac8]" started-at="2022-01-12T11:20:46 CET" name="initialize" finished-at="2022-01-12T11:20:48 CET" duration-ms="1652" status="PASS">
+      <class name="pers.membrive.veracity.ObtainProductTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.ObtainProductTest@7ed7259e]" started-at="2022-01-12T13:12:29 CET" name="initialize" finished-at="2022-01-12T13:12:31 CET" duration-ms="1680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="obtainProduct()[pri:0, instance:pers.membrive.veracity.ObtainProduct@6fe7aac8]" started-at="2022-01-12T11:20:58 CET" name="obtainProduct" finished-at="2022-01-12T11:21:12 CET" duration-ms="14276" status="PASS">
+        <test-method signature="obtainProduct()[pri:1, instance:pers.membrive.veracity.ObtainProductTest@7ed7259e]" started-at="2022-01-12T13:12:42 CET" name="obtainProduct" finished-at="2022-01-12T13:13:09 CET" duration-ms="26745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtainProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.ObtainProduct@6fe7aac8]" started-at="2022-01-12T11:21:49 CET" name="teardown" finished-at="2022-01-12T11:21:53 CET" duration-ms="4093" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.ObtainProductTest@7ed7259e]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- pers.membrive.veracity.ObtainProduct -->
+      </class> <!-- pers.membrive.veracity.ObtainProductTest -->
       <class name="pers.membrive.veracity.VerifyProviderSelect">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@2473d930]" started-at="2022-01-12T11:20:52 CET" name="initialize" finished-at="2022-01-12T11:20:54 CET" duration-ms="1745" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@41fbdac4]" started-at="2022-01-12T13:12:36 CET" name="initialize" finished-at="2022-01-12T13:12:38 CET" duration-ms="1782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyProviderSelect()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@2473d930]" started-at="2022-01-12T11:21:34 CET" name="verifyProviderSelect" finished-at="2022-01-12T11:21:40 CET" duration-ms="6149" status="PASS">
+        <test-method signature="verifyProviderSelect()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@41fbdac4]" started-at="2022-01-12T13:13:30 CET" name="verifyProviderSelect" finished-at="2022-01-12T13:13:37 CET" duration-ms="6191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProviderSelect -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@2473d930]" started-at="2022-01-12T11:21:53 CET" name="teardown" finished-at="2022-01-12T11:21:53 CET" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@41fbdac4]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pers.membrive.veracity.VerifyProviderSelect -->
       <class name="pers.membrive.veracity.VerifyProductTypeCheck">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@76908cc0]" started-at="2022-01-12T11:20:51 CET" name="initialize" finished-at="2022-01-12T11:20:52 CET" duration-ms="1592" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@647e447]" started-at="2022-01-12T13:12:35 CET" name="initialize" finished-at="2022-01-12T13:12:36 CET" duration-ms="1827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyProductTypeCheck()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@76908cc0]" started-at="2022-01-12T11:21:27 CET" name="verifyProductTypeCheck" finished-at="2022-01-12T11:21:34 CET" duration-ms="6996" status="PASS">
+        <test-method signature="verifyProductTypeCheck()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@647e447]" started-at="2022-01-12T13:13:24 CET" name="verifyProductTypeCheck" finished-at="2022-01-12T13:13:30 CET" duration-ms="6858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductTypeCheck -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@76908cc0]" started-at="2022-01-12T11:21:53 CET" name="teardown" finished-at="2022-01-12T11:21:53 CET" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@647e447]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pers.membrive.veracity.VerifyProductTypeCheck -->
       <class name="pers.membrive.veracity.VerifySearcher">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifySearcher@35047d03]" started-at="2022-01-12T11:20:54 CET" name="initialize" finished-at="2022-01-12T11:20:56 CET" duration-ms="1781" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifySearcher@3c407114]" started-at="2022-01-12T13:12:38 CET" name="initialize" finished-at="2022-01-12T13:12:40 CET" duration-ms="1897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifySearcher()[pri:0, instance:pers.membrive.veracity.VerifySearcher@35047d03]" started-at="2022-01-12T11:21:40 CET" name="verifySearcher" finished-at="2022-01-12T11:21:49 CET" duration-ms="8995" status="PASS">
+        <test-method signature="verifySearcher()[pri:0, instance:pers.membrive.veracity.VerifySearcher@3c407114]" started-at="2022-01-12T13:13:37 CET" name="verifySearcher" finished-at="2022-01-12T13:13:46 CET" duration-ms="9034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearcher -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifySearcher@35047d03]" started-at="2022-01-12T11:21:53 CET" name="teardown" finished-at="2022-01-12T11:21:54 CET" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifySearcher@3c407114]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pers.membrive.veracity.VerifySearcher -->
-    </test> <!-- C:/Users/membr/IdeaProjects/dnv -->
+    </test> <!-- suite -->
   </suite> <!-- All Test Suite -->
 </testng-results>

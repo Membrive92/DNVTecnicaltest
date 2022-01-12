@@ -13,35 +13,32 @@ import pers.membrive.pageObjects.MarketplacePage;
 
 import java.io.IOException;
 
-public class VerifyProviderSelect extends Base {
-
+public class VerifyCategoryCheckTest extends Base {
     String userEmail;
     String userPass;
     public WebDriver driver;
     public static Logger log ;
+
     @BeforeTest
     public void initialize() throws IOException
     {
         driver = setupDriver();
         userEmail = props.getProperty("userEmail");
         userPass = props.getProperty("userPassword");
-        log = LogManager.getLogger(VerifyProviderSelect.class.getName());
-
+        log = LogManager.getLogger(VerifyCategoryCheckTest.class.getName());
         log.info("Driver is initialized");
         driver.get(props.getProperty("url"));
         log.info("Navigated to Home page");
     }
 
-
-    @Test
-    public void verifyProviderSelect() throws IOException
+    @Test(priority = 3)
+    public void verifyCategoryCheckTest() throws IOException
     {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
-
-          landing.getCookiesAcceptBtn().click();
+        landing.getCookiesAcceptBtn().click();
         log.debug("Cookie alert accepted");
         landing.getLogin().click();
         log.debug("On login window");
@@ -49,24 +46,16 @@ public class VerifyProviderSelect extends Base {
         log.info("login succesful");
         landing.getMarketplace().click();
         log.debug("On Marketplace window");
-        scrollDown(0, 500);
-        log.debug("scroll down on page");
-        marketplace.getProviderSelect().click();
-        log.debug("Provider Select clicked");
-        marketplace.getOptionProviderSelect().click();
-        log.debug("Cisco Option selected");
-        Assert.assertEquals(marketplace.getProviderSelect().getText(), "Cisco");
-        log.info("Cisco Option selected successfully");
+        marketplace.getCyberSecurityCheck().click();
+        log.debug("CyberSecurity check clicked");
+        Assert.assertEquals(marketplace.getCyberSecurityLabel().getText(), "Cyber security");
+        log.info("Cyber security selected successfully");
         marketplace.getClearAllSpan().click();
         log.debug("All checks have been cleaned");
-
     }
-
-
 
     @AfterTest
     public void teardown() {
-        if(driver != null)
         driver.quit();
     }
 

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: TestSuite
+Test set: pers.membrive.veracity.Test2
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 80.559 s - in TestSuite
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 s - in pers.membrive.veracity.Test2

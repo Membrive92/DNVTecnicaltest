@@ -1,6 +1,5 @@
-11:40:51.168 [main] INFO  pers.membrive.veracity.ObtainProduct - login succesful
-11:40:53.602 [main] DEBUG pers.membrive.veracity.ObtainProduct - On Marketplace window
-11:40:55.550 [main] DEBUG pers.membrive.veracity.ObtainProduct - On Product window
-11:40:56.642 [main] INFO  pers.membrive.veracity.ObtainProduct - The product is right!
-11:40:56.716 [main] DEBUG pers.membrive.veracity.ObtainProduct - Free access button accepted
-11:40:56.793 [main] DEBUG pers.membrive.veracity.ObtainProduct - Terms and conditions acepted
+13:13:43.609 [main] DEBUG pers.membrive.veracity.VerifySearcher - On Marketplace window
+13:13:43.668 [main] DEBUG pers.membrive.veracity.VerifySearcher - Searcher clicked
+13:13:43.779 [main] DEBUG pers.membrive.veracity.VerifySearcher - Energy Transition Outlook 2021 dataset typed on searcher
+13:13:44.449 [main] DEBUG pers.membrive.veracity.VerifySearcher - clicked on product result
+13:13:46.118 [main] INFO  pers.membrive.veracity.VerifySearcher - the product clicked is right!

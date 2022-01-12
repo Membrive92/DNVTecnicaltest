@@ -1,7 +1,6 @@
-11:40:46.614 [main] INFO  pers.membrive.veracity.VerifySearcher - Driver is initialized
-11:40:47.628 [main] INFO  pers.membrive.veracity.VerifySearcher - Navigated to Home page
-11:40:47.828 [main] DEBUG pers.membrive.veracity.Login - Cookie alert accepted
-11:40:48.664 [main] DEBUG pers.membrive.veracity.Login - On login window
-11:40:49.609 [main] INFO  pers.membrive.veracity.Login - login succesful
-11:40:49.672 [main] DEBUG pers.membrive.veracity.ObtainProduct - Cookie alert accepted
-11:40:50.274 [main] DEBUG pers.membrive.veracity.ObtainProduct - On login window
+13:13:37.003 [main] DEBUG pers.membrive.veracity.VerifyProviderSelect - Cisco Option selected
+13:13:37.025 [main] INFO  pers.membrive.veracity.VerifyProviderSelect - Cisco Option selected successfully
+13:13:37.084 [main] DEBUG pers.membrive.veracity.VerifyProviderSelect - All checks have been cleaned
+13:13:37.135 [main] DEBUG pers.membrive.veracity.VerifySearcher - Cookie alert accepted
+13:13:37.872 [main] DEBUG pers.membrive.veracity.VerifySearcher - On login window
+13:13:38.860 [main] INFO  pers.membrive.veracity.VerifySearcher - login succesful

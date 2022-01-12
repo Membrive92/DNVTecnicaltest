@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import java.io.IOException;
 
 public class Listeners extends Base implements ITestListener {
@@ -19,19 +18,18 @@ public class Listeners extends Base implements ITestListener {
         ITestListener.super.onTestSuccess(result);
     }
 
+    //Method manage take screenshot on failure test, catch a instance of driver and call method defined on Base class
     @Override
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
-
         WebDriver driver = null;
         String testMethodName = result.getMethod().getMethodName();
+
         try {
            driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-
         } catch (Exception e){
             e.printStackTrace();
         }
-
 
         try {
             getScreenshotPath(testMethodName, driver);

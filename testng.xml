@@ -1,44 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" preserve-order="true" >
     <listeners>
-        <listener class-name="pers.membrive.veracity.Listeners"></listener>
+        <listener class-name="pers.membrive.veracity.Listeners"/>
     </listeners>
-    <test verbose="10" preserve-order="true" name="C:/Users/membr/IdeaProjects/dnv">
+    <test verbose="10"  name="suite">
         <classes>
-            <class name="pers.membrive.veracity.Login">
+            <class name="pers.membrive.veracity.LoginTest">
                 <methods>
-                    <include name="login"/>
+                    <include name="loginTest"/>
                 </methods>
             </class>
-            <class name="pers.membrive.veracity.ObtainProduct">
+            <class name="pers.membrive.veracity.LoginFailTest">
                 <methods>
-                    <include name="obtainProduct"/>
+                    <include name="loginFailTest"/>
                 </methods>
             </class>
-            <class name="pers.membrive.veracity.VerifyCategoryCheck">
+            <class name="pers.membrive.veracity.ObtainProductTest">
                 <methods>
-                    <include name="verifyCategoryCheck"/>
+                    <include name="obtainProductTest"/>
                 </methods>
             </class>
-            <class name="pers.membrive.veracity.VerifyIndustryCheck">
+            <class name="pers.membrive.veracity.VerifyCategoryCheckTest">
                 <methods>
-                    <include name="verifyIndustryCheck"/>
+                    <include name="verifyCategoryCheckTest"/>
                 </methods>
             </class>
-            <class name="pers.membrive.veracity.VerifyProductTypeCheck">
+            <class name="pers.membrive.veracity.VerifyIndustryCheckTest">
                 <methods>
-                    <include name="verifyProductTypeCheck"/>
+                    <include name="verifyIndustryCheckTest"/>
                 </methods>
             </class>
-            <class name="pers.membrive.veracity.VerifyProviderSelect">
+            <class name="pers.membrive.veracity.VerifyProductTypeCheckTest">
                 <methods>
-                    <include name="verifyProviderSelect"/>
+                    <include name="verifyProductTypeCheckTest"/>
                 </methods>
             </class>
-            <class name="pers.membrive.veracity.VerifySearcher">
+            <class name="pers.membrive.veracity.VerifyProviderSelectTest">
                 <methods>
-                    <include name="verifySearcher"/>
+                    <include name="verifyProviderSelectTest"/>
+                </methods>
+            </class>
+            <class name="pers.membrive.veracity.VerifySearcherTest">
+                <methods>
+                    <include name="verifySearcherTest"/>
                 </methods>
             </class>
         </classes>

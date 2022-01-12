@@ -3,18 +3,12 @@ package pers.membrive.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class MarketplacePage {
-
     public WebDriver driver;
-
-    Select select;
-
     public MarketplacePage(WebDriver driver) {
         this.driver = driver;
     }
-
 
     By searchInput = By.xpath("//input[@type=\"text\" and @placeholder=\"Search the marketplace\"]");
 
@@ -38,25 +32,17 @@ public class MarketplacePage {
 
     By clearAllChecks = By.xpath("//div[@class=\"_filter-title_867e0\"]//a[@class = \"_right_867e0 _clear-all_867e0\"]");
 
-
-    // inside product card
-
     By testProductTitle = By.xpath("//h1[@class=\"_Title_991e1\"]");
 
     By testProduct = By.xpath("//h3[text() = \"Energy Transition Outlook 2021 dataset\"]");
 
     By freeAccessButton = By.xpath("//button[@class = \"_Button_41ac2\" and text() = \"Free access\"]");
 
-    By termsBtnCancel = By.xpath("//button[@class=\"_Button_41ac2\" and text() = \"Cancel\"]");
-
     By termsBtnAccept = By.xpath("//button[@class=\"_Button_41ac2\" and text() = \"I accept\"]");
 
     By goMyDataBtn = By.xpath("//td[@class=\"_step-action_34e20\"]//a[@data-variant=\"green\" and text() = \"Go to My data\"]");
 
     By dataTitleProductObtained = By.xpath("//div[@class=\"tileTitle\" and text() = \"ETO 2021\"]");
-
-
-    //pending to add verification with card of my data section
 
 
     public WebElement getSearchInput() {
@@ -67,9 +53,7 @@ public class MarketplacePage {
         return driver.findElement(searchInputResult);
     }
 
-    public WebElement getTestProductTitle() {
-        return driver.findElement(testProductTitle);
-    }
+    public WebElement getTestProductTitle() {return driver.findElement(testProductTitle);}
 
     public WebElement getOilGasCheck() {
         return driver.findElement(oil_GasCheck);
@@ -99,11 +83,7 @@ public class MarketplacePage {
         return driver.findElement(providerSelect);
     }
 
-    public WebElement getOptionProviderSelect() {
-        // select = new Select(driver.findElement(ciscoOptionSelect));
-        return driver.findElement(ciscoOptionSelect);
-
-    }
+    public WebElement getOptionProviderSelect() {return driver.findElement(ciscoOptionSelect);}
 
     public WebElement getClearAllSpan() {
         return driver.findElement(clearAllChecks);
@@ -117,21 +97,10 @@ public class MarketplacePage {
         return driver.findElement(freeAccessButton);
     }
 
-    public WebElement getTermsBtnCancel() {
-        return driver.findElement(termsBtnCancel);
-    }
+    public WebElement getTermsBtnAccept() {return driver.findElement(termsBtnAccept);}
 
-    public WebElement getTermsBtnAccept() {
-        return driver.findElement(termsBtnAccept);
-    }
+    public WebElement getGoMyDataBtn() {return driver.findElement(goMyDataBtn);}
 
-    public WebElement getGoMyDataBtn() {
-        return driver.findElement(goMyDataBtn);
-    }
-
-    public WebElement getDataTitleProductObtained() {
-        return driver.findElement(dataTitleProductObtained);
-    }
-
+    public WebElement getDataTitleProductObtained() {return driver.findElement(dataTitleProductObtained);}
 
 }
