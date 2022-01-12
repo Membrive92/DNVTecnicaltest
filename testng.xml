@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests">
+<suite name="All Test Suite">
     <listeners>
-        <listener class-name="pers.membrive.veracity.Listeners"/>
+        <listener class-name="pers.membrive.veracity.Listeners"></listener>
     </listeners>
-
-    <test name="test">
+    <test verbose="10" preserve-order="true" name="C:/Users/membr/IdeaProjects/dnv">
         <classes>
             <class name="pers.membrive.veracity.Login">
                 <methods>
@@ -17,12 +16,28 @@
                     <include name="obtainProduct"/>
                 </methods>
             </class>
-            <class name="pers.membrive.veracity.ValidateMarketplaceSelectors">
+            <class name="pers.membrive.veracity.VerifyCategoryCheck">
+                <methods>
+                    <include name="verifyCategoryCheck"/>
+                </methods>
+            </class>
+            <class name="pers.membrive.veracity.VerifyIndustryCheck">
                 <methods>
                     <include name="verifyIndustryCheck"/>
-                    <include name="verifyCategoryCheck"/>
+                </methods>
+            </class>
+            <class name="pers.membrive.veracity.VerifyProductTypeCheck">
+                <methods>
                     <include name="verifyProductTypeCheck"/>
+                </methods>
+            </class>
+            <class name="pers.membrive.veracity.VerifyProviderSelect">
+                <methods>
                     <include name="verifyProviderSelect"/>
+                </methods>
+            </class>
+            <class name="pers.membrive.veracity.VerifySearcher">
+                <methods>
                     <include name="verifySearcher"/>
                 </methods>
             </class>

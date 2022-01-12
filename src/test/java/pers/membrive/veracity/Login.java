@@ -23,7 +23,7 @@ public class Login extends Base{
         driver = setupDriver();
         userEmail = props.getProperty("userEmail");
         userPass = props.getProperty("userPassword");
-        log = LogManager.getLogger(Base.class.getName());
+        log = LogManager.getLogger(Login.class.getName());
 
         log.info("Driver is initialized");
         driver.get(props.getProperty("url"));
@@ -35,10 +35,12 @@ public class Login extends Base{
     {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
-        log.info("Navigated to Home page");
         landing.getCookiesAcceptBtn().click();
+        log.debug("Cookie alert accepted");
         landing.getLogin().click();
+        log.debug("On login window");
         login.signin(userEmail,userPass);
+        log.info("login succesful");
     }
 
     @AfterTest

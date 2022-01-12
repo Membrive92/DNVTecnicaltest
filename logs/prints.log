@@ -1,0 +1,6 @@
+11:40:51.168 [main] INFO  pers.membrive.veracity.ObtainProduct - login succesful
+11:40:53.602 [main] DEBUG pers.membrive.veracity.ObtainProduct - On Marketplace window
+11:40:55.550 [main] DEBUG pers.membrive.veracity.ObtainProduct - On Product window
+11:40:56.642 [main] INFO  pers.membrive.veracity.ObtainProduct - The product is right!
+11:40:56.716 [main] DEBUG pers.membrive.veracity.ObtainProduct - Free access button accepted
+11:40:56.793 [main] DEBUG pers.membrive.veracity.ObtainProduct - Terms and conditions acepted

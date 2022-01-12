@@ -54,6 +54,7 @@ public class Base {
         File source = takeScreen.getScreenshotAs(OutputType.FILE);
         String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
         FileUtils.copyFile(source,new File(destinationFile));
+
     }
 
 

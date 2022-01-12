@@ -7,14 +7,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import pers.membrive.pageObjects.LandingPage;
 import pers.membrive.pageObjects.LoginPage;
 import pers.membrive.pageObjects.MarketplacePage;
 
 import java.io.IOException;
 
-public class ObtainProduct extends Base {
+public class VerifySearcher extends Base {
 
     String userEmail;
     String userPass;
@@ -26,7 +25,7 @@ public class ObtainProduct extends Base {
         driver = setupDriver();
         userEmail = props.getProperty("userEmail");
         userPass = props.getProperty("userPassword");
-        log = LogManager.getLogger(ObtainProduct.class.getName());
+        log = LogManager.getLogger(VerifySearcher.class.getName());
 
         log.info("Driver is initialized");
         driver.get(props.getProperty("url"));
@@ -36,43 +35,36 @@ public class ObtainProduct extends Base {
 
 
     @Test
-    public void obtainProduct() throws IOException
+    public void verifySearcher() throws IOException
     {
         LandingPage landing = new LandingPage(driver);
         LoginPage login = new LoginPage(driver);
         MarketplacePage marketplace = new MarketplacePage(driver);
 
-        landing.getCookiesAcceptBtn().click();
+
+         landing.getCookiesAcceptBtn().click();
         log.debug("Cookie alert accepted");
         landing.getLogin().click();
         log.debug("On login window");
         login.signin(userEmail,userPass);
-        log.info("login succesful");
-
+        log.info("login succesful");;
         landing.getMarketplace().click();
         log.debug("On Marketplace window");
-        marketplace.getTestProduct().click();
-        log.debug("On Product window");
+        marketplace.getSearchInput().click();
+        log.debug("Searcher clicked");
+        marketplace.getSearchInput().sendKeys("Energy Transition Outlook 2021 dataset");
+        log.debug("Energy Transition Outlook 2021 dataset typed on searcher");
+        marketplace.getSearchInputResult().click();
+        log.debug("clicked on product result");
         Assert.assertEquals(marketplace.getTestProductTitle().getText(), "Energy Transition Outlook 2021 dataset");
-        log.info("The product is right!");
-        marketplace.getFreeAccessButton().click();
-        log.debug("Free access button accepted");
-        marketplace.getTermsBtnAccept().click();
-        log.debug("Terms and conditions acepted");
-        marketplace.getGoMyDataBtn().click();
-        log.debug("On My data ");
-        Assert.assertEquals(marketplace.getDataTitleProductObtained().getText(), "ETO 2021");
-        log.info("The product is obtained successfully");
+        log.info("the product clicked is right!");
 
     }
-
-
 
     @AfterTest
     public void teardown() {
-
-           driver.close();
+        if(driver != null)
+        driver.quit();
     }
-
 
 }
