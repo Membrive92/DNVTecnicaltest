@@ -3,6 +3,7 @@ package pers.membrive.veracity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -11,7 +12,6 @@ import pers.membrive.pageObjects.LoginPage;
 import java.io.IOException;
 
 public class LoginTest extends Base{
-
     String userEmail;
     String userPass;
     public WebDriver driver;
@@ -29,7 +29,7 @@ public class LoginTest extends Base{
         log.info("Navigated to Home page");
     }
 
-    @Test(groups = {"mitest"})
+    @Test
     public void loginTest() throws IOException
     {
         LandingPage landing = new LandingPage(driver);
@@ -40,6 +40,21 @@ public class LoginTest extends Base{
         log.debug("On login window");
         login.signin(userEmail,userPass);
         log.info("login succesful");
+    }
+
+    //it is a failed test for show how the reports feature works
+    @Test
+    public void loginFailTest() throws IOException
+    {
+        LandingPage landing = new LandingPage(driver);
+        LoginPage login = new LoginPage(driver);
+        landing.getCookiesAcceptBtn().click();
+        log.debug("Cookie alert accepted");
+        landing.getLogin().click();
+        log.debug("On login window");
+        login.signin("Email@fail.com","fail");
+        Assert.assertEquals(login.getErrorLoginMessage().getText(), "Invalid username");
+        log.error("Error in Login, wrong data");
     }
 
     @AfterTest

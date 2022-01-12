@@ -13,7 +13,6 @@ import pers.membrive.pageObjects.MarketplacePage;
 import java.io.IOException;
 
 public class ObtainProductTest extends Base {
-
     String userEmail;
     String userPass;
     public WebDriver driver;
@@ -31,7 +30,7 @@ public class ObtainProductTest extends Base {
         log.info("Navigated to Home page");
     }
 
-    @Test(priority = 1)
+    @Test
     public void obtainProductTest() throws IOException
     {
         LandingPage landing = new LandingPage(driver);

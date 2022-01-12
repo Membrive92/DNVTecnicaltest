@@ -1,8 +1,9 @@
-C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyProviderSelect.java
-C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyIndustryCheck.java
-C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyProductTypeCheck.java
-C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifySearcher.java
+C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifySearcherTest.java
+C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyProviderSelectTest.java
+C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyProductTypeCheckTest.java
+C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyCategoryCheckTest.java
 C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\LoginTest.java
 C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\Listeners.java
 C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\ObtainProductTest.java
-C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyCategoryCheck.java
+C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\LoginFailTest.java
+C:\Users\membr\IdeaProjects\dnv\src\test\java\pers\membrive\veracity\VerifyIndustryCheckTest.java

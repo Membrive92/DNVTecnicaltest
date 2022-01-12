@@ -45,8 +45,7 @@ public class Listeners extends Base implements ITestListener {
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
-    }
+        ITestListener.super.onTestFailedButWithinSuccessPercentage(result);}
 
     @Override
     public void onTestFailedWithTimeout(ITestResult result) {

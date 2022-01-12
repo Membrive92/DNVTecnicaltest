@@ -1,112 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="22" total="30" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-12T13:12:26 CET" name="All Test Suite" finished-at="2022-01-12T13:13:46 CET" duration-ms="80070">
+  <suite started-at="2022-01-12T16:06:11 CET" name="Tecnical Test" finished-at="2022-01-12T16:07:55 CET" duration-ms="103986">
     <groups>
-      <group name="mitest">
-        <method signature="LoginTest.login()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" name="login" class="pers.membrive.veracity.LoginTest"/>
-      </group> <!-- mitest -->
     </groups>
-    <test started-at="2022-01-12T13:12:26 CET" name="suite" finished-at="2022-01-12T13:13:46 CET" duration-ms="80070">
-      <class name="pers.membrive.veracity.VerifyCategoryCheck">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyCategoryCheck@28eaa59a]" started-at="2022-01-12T13:12:31 CET" name="initialize" finished-at="2022-01-12T13:12:33 CET" duration-ms="1661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="verifyCategoryCheck()[pri:3, instance:pers.membrive.veracity.VerifyCategoryCheck@28eaa59a]" started-at="2022-01-12T13:13:09 CET" name="verifyCategoryCheck" finished-at="2022-01-12T13:13:16 CET" duration-ms="7349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCategoryCheck -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyCategoryCheck@28eaa59a]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- pers.membrive.veracity.VerifyCategoryCheck -->
+    <test started-at="2022-01-12T16:06:11 CET" name="loginTest" finished-at="2022-01-12T16:06:16 CET" duration-ms="5960">
       <class name="pers.membrive.veracity.LoginTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" started-at="2022-01-12T13:12:26 CET" name="initialize" finished-at="2022-01-12T13:12:29 CET" duration-ms="3073" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.LoginTest@7ff95560]" started-at="2022-01-12T16:06:11 CET" name="initialize" finished-at="2022-01-12T16:06:14 CET" duration-ms="3367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="login()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" started-at="2022-01-12T13:12:40 CET" name="login" finished-at="2022-01-12T13:12:42 CET" duration-ms="2192" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:pers.membrive.veracity.LoginTest@7ff95560]" started-at="2022-01-12T16:06:14 CET" name="loginTest" finished-at="2022-01-12T16:06:16 CET" duration-ms="2482" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.LoginTest@2145b572]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="60" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.LoginTest@7ff95560]" started-at="2022-01-12T16:06:16 CET" name="teardown" finished-at="2022-01-12T16:06:16 CET" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pers.membrive.veracity.LoginTest -->
-      <class name="pers.membrive.veracity.VerifyIndustryCheck">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@3427b02d]" started-at="2022-01-12T13:12:33 CET" name="initialize" finished-at="2022-01-12T13:12:35 CET" duration-ms="1820" status="PASS">
+    </test> <!-- loginTest -->
+    <test started-at="2022-01-12T16:06:17 CET" name="login test fail" finished-at="2022-01-12T16:06:40 CET" duration-ms="23934">
+      <class name="pers.membrive.veracity.LoginTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.LoginTest@2f177a4b]" started-at="2022-01-12T16:06:17 CET" name="initialize" finished-at="2022-01-12T16:06:18 CET" duration-ms="1642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyIndustryCheck()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@3427b02d]" started-at="2022-01-12T13:13:16 CET" name="verifyIndustryCheck" finished-at="2022-01-12T13:13:24 CET" duration-ms="7051" status="PASS">
+        <test-method signature="loginFailTest()[pri:0, instance:pers.membrive.veracity.LoginTest@2f177a4b]" started-at="2022-01-12T16:06:18 CET" name="loginFailTest" finished-at="2022-01-12T16:06:40 CET" duration-ms="22104" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#next"}
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-NP5PALL', ip: '192.168.45.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4bf7e0c1397782e847b21630bea371d, findElement {using=id, value=next}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\membr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50658}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50658/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e4bf7e0c1397782e847b21630bea371d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#next"}
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-NP5PALL', ip: '192.168.45.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4bf7e0c1397782e847b21630bea371d, findElement {using=id, value=next}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\membr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50658}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50658/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e4bf7e0c1397782e847b21630bea371d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at pers.membrive.pageObjects.LoginPage.getLoginButton(LoginPage.java:38)
+at pers.membrive.pageObjects.LoginPage.signin(LoginPage.java:29)
+at pers.membrive.veracity.LoginTest.loginFailTest(LoginTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIndustryCheck -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyIndustryCheck@3427b02d]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="125" status="PASS">
+        </test-method> <!-- loginFailTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.LoginTest@2f177a4b]" started-at="2022-01-12T16:06:40 CET" name="teardown" finished-at="2022-01-12T16:06:40 CET" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- pers.membrive.veracity.VerifyIndustryCheck -->
+      </class> <!-- pers.membrive.veracity.LoginTest -->
+    </test> <!-- login test fail -->
+    <test started-at="2022-01-12T16:06:40 CET" name="obtain a product" finished-at="2022-01-12T16:07:10 CET" duration-ms="29665">
       <class name="pers.membrive.veracity.ObtainProductTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.ObtainProductTest@7ed7259e]" started-at="2022-01-12T13:12:29 CET" name="initialize" finished-at="2022-01-12T13:12:31 CET" duration-ms="1680" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.ObtainProductTest@77167fb7]" started-at="2022-01-12T16:06:40 CET" name="initialize" finished-at="2022-01-12T16:06:42 CET" duration-ms="1675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="obtainProduct()[pri:1, instance:pers.membrive.veracity.ObtainProductTest@7ed7259e]" started-at="2022-01-12T13:12:42 CET" name="obtainProduct" finished-at="2022-01-12T13:13:09 CET" duration-ms="26745" status="PASS">
+        <test-method signature="obtainProductTest()[pri:0, instance:pers.membrive.veracity.ObtainProductTest@77167fb7]" started-at="2022-01-12T16:06:42 CET" name="obtainProductTest" finished-at="2022-01-12T16:07:10 CET" duration-ms="27868" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- obtainProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.ObtainProductTest@7ed7259e]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="194" status="PASS">
+        </test-method> <!-- obtainProductTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.ObtainProductTest@77167fb7]" started-at="2022-01-12T16:07:10 CET" name="teardown" finished-at="2022-01-12T16:07:10 CET" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pers.membrive.veracity.ObtainProductTest -->
-      <class name="pers.membrive.veracity.VerifyProviderSelect">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@41fbdac4]" started-at="2022-01-12T13:12:36 CET" name="initialize" finished-at="2022-01-12T13:12:38 CET" duration-ms="1782" status="PASS">
+    </test> <!-- obtain a product -->
+    <test started-at="2022-01-12T16:07:10 CET" name="VerifyCategory" finished-at="2022-01-12T16:07:19 CET" duration-ms="8842">
+      <class name="pers.membrive.veracity.VerifyMarketplaceSelectorsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@56de5251]" started-at="2022-01-12T16:07:10 CET" name="initialize" finished-at="2022-01-12T16:07:12 CET" duration-ms="1766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyProviderSelect()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@41fbdac4]" started-at="2022-01-12T13:13:30 CET" name="verifyProviderSelect" finished-at="2022-01-12T13:13:37 CET" duration-ms="6191" status="PASS">
+        <test-method signature="verifyCategoryCheckTest()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@56de5251]" started-at="2022-01-12T16:07:12 CET" name="verifyCategoryCheckTest" finished-at="2022-01-12T16:07:19 CET" duration-ms="6932" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProviderSelect -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyProviderSelect@41fbdac4]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="125" status="PASS">
+        </test-method> <!-- verifyCategoryCheckTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@56de5251]" started-at="2022-01-12T16:07:19 CET" name="teardown" finished-at="2022-01-12T16:07:19 CET" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- pers.membrive.veracity.VerifyProviderSelect -->
-      <class name="pers.membrive.veracity.VerifyProductTypeCheck">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@647e447]" started-at="2022-01-12T13:12:35 CET" name="initialize" finished-at="2022-01-12T13:12:36 CET" duration-ms="1827" status="PASS">
+      </class> <!-- pers.membrive.veracity.VerifyMarketplaceSelectorsTest -->
+    </test> <!-- VerifyCategory -->
+    <test started-at="2022-01-12T16:07:19 CET" name="Industry check" finished-at="2022-01-12T16:07:29 CET" duration-ms="9748">
+      <class name="pers.membrive.veracity.VerifyMarketplaceSelectorsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@5276e6b0]" started-at="2022-01-12T16:07:19 CET" name="initialize" finished-at="2022-01-12T16:07:21 CET" duration-ms="1666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyProductTypeCheck()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@647e447]" started-at="2022-01-12T13:13:24 CET" name="verifyProductTypeCheck" finished-at="2022-01-12T13:13:30 CET" duration-ms="6858" status="PASS">
+        <test-method signature="verifyIndustryCheckTest()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@5276e6b0]" started-at="2022-01-12T16:07:21 CET" name="verifyIndustryCheckTest" finished-at="2022-01-12T16:07:29 CET" duration-ms="7938" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductTypeCheck -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyProductTypeCheck@647e447]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="128" status="PASS">
+        </test-method> <!-- verifyIndustryCheckTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@5276e6b0]" started-at="2022-01-12T16:07:29 CET" name="teardown" finished-at="2022-01-12T16:07:29 CET" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- pers.membrive.veracity.VerifyProductTypeCheck -->
-      <class name="pers.membrive.veracity.VerifySearcher">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifySearcher@3c407114]" started-at="2022-01-12T13:12:38 CET" name="initialize" finished-at="2022-01-12T13:12:40 CET" duration-ms="1897" status="PASS">
+      </class> <!-- pers.membrive.veracity.VerifyMarketplaceSelectorsTest -->
+    </test> <!-- Industry check -->
+    <test started-at="2022-01-12T16:07:29 CET" name="ProductType" finished-at="2022-01-12T16:07:37 CET" duration-ms="8260">
+      <class name="pers.membrive.veracity.VerifyMarketplaceSelectorsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@159f197]" started-at="2022-01-12T16:07:29 CET" name="initialize" finished-at="2022-01-12T16:07:30 CET" duration-ms="1571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifySearcher()[pri:0, instance:pers.membrive.veracity.VerifySearcher@3c407114]" started-at="2022-01-12T13:13:37 CET" name="verifySearcher" finished-at="2022-01-12T13:13:46 CET" duration-ms="9034" status="PASS">
+        <test-method signature="verifyProductTypeCheckTest()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@159f197]" started-at="2022-01-12T16:07:30 CET" name="verifyProductTypeCheckTest" finished-at="2022-01-12T16:07:37 CET" duration-ms="6550" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearcher -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifySearcher@3c407114]" started-at="2022-01-12T13:13:46 CET" name="teardown" finished-at="2022-01-12T13:13:46 CET" duration-ms="126" status="PASS">
+        </test-method> <!-- verifyProductTypeCheckTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@159f197]" started-at="2022-01-12T16:07:37 CET" name="teardown" finished-at="2022-01-12T16:07:37 CET" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- pers.membrive.veracity.VerifySearcher -->
-    </test> <!-- suite -->
-  </suite> <!-- All Test Suite -->
+      </class> <!-- pers.membrive.veracity.VerifyMarketplaceSelectorsTest -->
+    </test> <!-- ProductType -->
+    <test started-at="2022-01-12T16:07:37 CET" name="ProviderSelect" finished-at="2022-01-12T16:07:45 CET" duration-ms="7810">
+      <class name="pers.membrive.veracity.VerifyMarketplaceSelectorsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@51e5fc98]" started-at="2022-01-12T16:07:37 CET" name="initialize" finished-at="2022-01-12T16:07:39 CET" duration-ms="1655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyProviderSelectTest()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@51e5fc98]" started-at="2022-01-12T16:07:39 CET" name="verifyProviderSelectTest" finished-at="2022-01-12T16:07:45 CET" duration-ms="5989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProviderSelectTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@51e5fc98]" started-at="2022-01-12T16:07:45 CET" name="teardown" finished-at="2022-01-12T16:07:45 CET" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- pers.membrive.veracity.VerifyMarketplaceSelectorsTest -->
+    </test> <!-- ProviderSelect -->
+    <test started-at="2022-01-12T16:07:45 CET" name="VerifySearcher" finished-at="2022-01-12T16:07:55 CET" duration-ms="9699">
+      <class name="pers.membrive.veracity.VerifyMarketplaceSelectorsTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@1677d1]" started-at="2022-01-12T16:07:45 CET" name="initialize" finished-at="2022-01-12T16:07:47 CET" duration-ms="1696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifySearcherTest()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@1677d1]" started-at="2022-01-12T16:07:47 CET" name="verifySearcherTest" finished-at="2022-01-12T16:07:54 CET" duration-ms="7830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearcherTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pers.membrive.veracity.VerifyMarketplaceSelectorsTest@1677d1]" started-at="2022-01-12T16:07:54 CET" name="teardown" finished-at="2022-01-12T16:07:55 CET" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- pers.membrive.veracity.VerifyMarketplaceSelectorsTest -->
+    </test> <!-- VerifySearcher -->
+  </suite> <!-- Tecnical Test -->
 </testng-results>

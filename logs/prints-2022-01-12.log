@@ -1,6 +1,0 @@
-13:13:37.003 [main] DEBUG pers.membrive.veracity.VerifyProviderSelect - Cisco Option selected
-13:13:37.025 [main] INFO  pers.membrive.veracity.VerifyProviderSelect - Cisco Option selected successfully
-13:13:37.084 [main] DEBUG pers.membrive.veracity.VerifyProviderSelect - All checks have been cleaned
-13:13:37.135 [main] DEBUG pers.membrive.veracity.VerifySearcher - Cookie alert accepted
-13:13:37.872 [main] DEBUG pers.membrive.veracity.VerifySearcher - On login window
-13:13:38.860 [main] INFO  pers.membrive.veracity.VerifySearcher - login succesful
